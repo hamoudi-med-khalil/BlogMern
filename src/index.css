@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #e6e6ff ;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family:'Montserrat, sans-serif' ;
+    
+}
+.cl-internal-w8uam1{
+     gap: 0.2rem;
+}
+.cl-internal-1p733cp{
+    padding: 0.4rem 2.5rem
+}
+.cl-internal-qo3qk7{
+    gap: 0.2rem;
+}
+.animatedButton{
+    animation-duration: 10000ms;
+}
+.ql-snow .ql-editor{
+    height: 8rem;
+    border: none;
+    background: white;
+
+}
+.ql-editor{
+    border: none !important;  
+    background: white;
+    border-radius: 20px;
+
+
+}
+.ql-container{
+    border: none !important;
+    background: white;
+}
+ .ql-toolbar{
+    border: none !important;
+    background: white;
+
+
+}

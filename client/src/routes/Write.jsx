@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+import { useUser } from '@clerk/clerk-react'
+import React from 'react'
+import 'react-quill-new/dist/quill.snow.css';
+import ReactQuill from 'react-quill-new';
+=======
 import { useAuth, useUser } from '@clerk/clerk-react'
 import React, { useEffect, useState } from 'react'
 import 'react-quill-new/dist/quill.snow.css';
@@ -9,10 +15,15 @@ import { toast } from 'react-toastify';
 import { IKContext, IKUpload } from 'imagekitio-react';
 import Upload from '../components/Upload';
 
+>>>>>>> 7aa20d9 (React setup)
 
 
 
 const Write = () => {
+<<<<<<< HEAD
+  const { isSignedIn, isLoaded } = useUser()
+
+=======
   const navigate = useNavigate()
   const [value, setValue] = useState('')
   const [cover, setCover] = useState('')
@@ -44,12 +55,15 @@ const Write = () => {
       navigate(`/${res.data.slug}`)
     }
   })
+>>>>>>> 7aa20d9 (React setup)
   if (!isLoaded) {
     return <div>Loading...</div>
   }
   if (isLoaded && !isSignedIn) {
     return <div>You should SignIn!</div>
   }
+<<<<<<< HEAD
+=======
   const handelSubmit = (e) => {
     e.preventDefault()
     const formData = new FormData(e.target)
@@ -66,10 +80,19 @@ const Write = () => {
 
 
 
+>>>>>>> 7aa20d9 (React setup)
 
   return (
     <div className=' flex flex-col gap-2'>
       <h1 className='text-xl font-light'>Create A New Post</h1>
+<<<<<<< HEAD
+      <form action="" className='flex flex-col gap-6'>
+        <button className=' w-max bg-white rounded-xl shadow p-2 text-sm text-gray-500'>Add a cover Image</button>
+        <input type='text'placeholder='My Awesome Story' className='bg-transparent text-3xl font-semibold outline-none'></input>
+        <div className='flex items-center gap-4'>
+          <label htmlFor="" className='text-sm'>Categories</label>
+          <select name="cat" id="" className='p-2 rounded-xl shadow outline-none'>
+=======
       <form action="" className='flex flex-col gap-6' onSubmit={handelSubmit}>
 
         <Upload
@@ -93,11 +116,20 @@ const Write = () => {
           <select
             name="category"
             id="" className='p-2 rounded-xl shadow outline-none'>
+>>>>>>> 7aa20d9 (React setup)
             <option value="general">General</option>
             <option value="web-design">Web Design</option>
             <option value="developement">Developement</option>
             <option value="databeses">Databases</option>
             <option value="seo">Search Engines</option>
+<<<<<<< HEAD
+            <option value="marketing">Marketing</option>          
+          </select>
+        </div>
+        <textarea name="desc" id="" placeholder='A Short Description...' className='p-4 rounded-xl shadow outline-none'></textarea>
+        <ReactQuill theme="snow" className='flex-1 rounded-xl ' />
+        <button className='bg-blue-800 text-white p-2 rounded-xl w-36'>Send</button>
+=======
             <option value="marketing">Marketing</option>
           </select>
         </div>
@@ -142,6 +174,7 @@ const Write = () => {
         {/* {mutation.isError ? (
           <div>An error occurred: {mutation.error.message}</div>
         ) : null} */}
+>>>>>>> 7aa20d9 (React setup)
       </form>
     </div>
   )

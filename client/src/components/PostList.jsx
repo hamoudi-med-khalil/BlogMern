@@ -1,6 +1,21 @@
 import React from 'react'
 import Image from './Image'
 import PostListItem from './PostListItem'
+<<<<<<< HEAD
+
+const PostList = () => {
+  return (
+    <div className='flex flex-col gap-12 mb-8'>
+        <PostListItem />
+        <PostListItem />
+        <PostListItem />
+        <PostListItem />
+        <PostListItem />
+        <PostListItem />
+        <PostListItem />
+        <PostListItem />
+    </div>
+=======
 import { useInfiniteQuery, useQuery } from '@tanstack/react-query'
 import axios from 'axios'
 import InfiniteScroll from 'react-infinite-scroll-component'
@@ -64,6 +79,7 @@ if (status === 'loading') return 'Loading...'
    
      
     
+>>>>>>> 7aa20d9 (React setup)
   )
 }
 

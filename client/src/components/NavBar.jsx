@@ -1,4 +1,12 @@
 
+<<<<<<< HEAD
+import React, { useState } from 'react'
+import Image from './Image';
+import { Link } from 'react-router';
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
+const NavBar = () => {
+    const [open, setOpen] = useState(false)
+=======
 import React, { useEffect, useState } from 'react'
 import Image from './Image';
 import { Link } from 'react-router';
@@ -15,6 +23,7 @@ const NavBar = () => {
 
 
 
+>>>>>>> 7aa20d9 (React setup)
     return (
         <div className='w-full h-16 md:h-20 flex items-center justify-between'>
             {/* logo */}

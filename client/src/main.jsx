@@ -15,6 +15,8 @@ import RegisterPage from './routes/RegisterPage.jsx'
 import LoginPage from './routes/LoginPage.jsx'
 import MAinLayout from './layouts/MAinLayout.jsx';
 import { ClerkProvider } from '@clerk/clerk-react';
+<<<<<<< HEAD
+=======
 import {
   QueryClient,
   QueryClientProvider,
@@ -24,6 +26,7 @@ import { ToastContainer } from 'react-toastify';
 
 
 const queryClient = new QueryClient()
+>>>>>>> 7aa20d9 (React setup)
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
@@ -32,6 +35,38 @@ if (!PUBLISHABLE_KEY) {
 }
 
 const router = createBrowserRouter([
+<<<<<<< HEAD
+ {
+  element: <MAinLayout />,
+  children : [
+    {
+      path: "/",
+      element: <HomePage />
+    },
+    {
+      path: "/posts",
+      element: <PostListPage />
+    },
+    {
+      path: "/:slug",
+      element: <SinglePostListPage />
+    },
+    {
+      path: "/write",
+      element: <Write />
+    },
+    {
+      path: "/login",
+      element: <LoginPage />
+    },
+    {
+      path: "/register",
+      element: <RegisterPage />
+    },
+  ]
+ }
+  
+=======
   {
     element: <MAinLayout />,
     children: [
@@ -62,16 +97,21 @@ const router = createBrowserRouter([
     ]
   }
 
+>>>>>>> 7aa20d9 (React setup)
 ]);
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+<<<<<<< HEAD
+    <RouterProvider router={router} />
+=======
       <QueryClientProvider client={queryClient}>
         <RouterProvider router={router} />
         <ToastContainer position='bottom-right'/>
       </QueryClientProvider>
+>>>>>>> 7aa20d9 (React setup)
     </ClerkProvider>
   </StrictMode>,
 )

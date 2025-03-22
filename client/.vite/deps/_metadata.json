@@ -1,0 +1,61 @@
+{
+  "hash": "867f249f",
+  "configHash": "95506a05",
+  "lockfileHash": "e3b0c442",
+  "browserHash": "0affac7f",
+  "optimized": {
+    "@clerk/clerk-react": {
+      "src": "../../node_modules/@clerk/clerk-react/dist/index.mjs",
+      "file": "@clerk_clerk-react.js",
+      "fileHash": "aee199ac",
+      "needsInterop": false
+    },
+    "imagekitio-react": {
+      "src": "../../node_modules/imagekitio-react/dist/imagekitio-react.esm.js",
+      "file": "imagekitio-react.js",
+      "fileHash": "f6653be0",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "ca427551",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "c0de9b10",
+      "needsInterop": true
+    },
+    "react-quill-new": {
+      "src": "../../node_modules/react-quill-new/lib/index.js",
+      "file": "react-quill-new.js",
+      "fileHash": "b72a877a",
+      "needsInterop": false
+    },
+    "react-router": {
+      "src": "../../node_modules/react-router/dist/development/index.mjs",
+      "file": "react-router.js",
+      "fileHash": "a69e8f6e",
+      "needsInterop": false
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "97d561ee",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-IU4XOYRB": {
+      "file": "chunk-IU4XOYRB.js"
+    },
+    "chunk-XHIYZU7X": {
+      "file": "chunk-XHIYZU7X.js"
+    },
+    "chunk-4SFAGBAW": {
+      "file": "chunk-4SFAGBAW.js"
+    }
+  }
+}

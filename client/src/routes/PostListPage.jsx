@@ -21,7 +21,10 @@ const PostListPage = () => {
         </div>
         {/** aside bar */}
         <div className= {`${open ? 'block' : 'hidden'} md:block`}>
+<<<<<<< HEAD
+=======
         <h1 className="mt-8 mb-4 text-sm font-bold">Search</h1>
+>>>>>>> 7aa20d9 (React setup)
         <SideBar />
         </div>
       </div>

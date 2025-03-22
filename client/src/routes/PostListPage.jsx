@@ -21,6 +21,7 @@ const PostListPage = () => {
         </div>
         {/** aside bar */}
         <div className= {`${open ? 'block' : 'hidden'} md:block`}>
+        <h1 className="mt-8 mb-4 text-sm font-bold">Search</h1>
         <SideBar />
         </div>
       </div>
